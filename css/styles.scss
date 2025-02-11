@@ -1,204 +1,356 @@
 /* styles.css */
-
 * {
     margin: 0;
     padding: 0;
+    color: #FFFFFF;
     box-sizing: border-box;
-}
-
-body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0;
-    padding: 0;
+  }
+  
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     text-align: center;
     background-color: #000000;
-}
-
-header {
+  }
+  
+  main {
+    max-width: calc(100% - 600px); /* Ensures 300px margin on both sides */
+    margin: 0 auto;
+  }
+  
+  header {
     display: flex;
     flex-direction: column;
     /* height: 177.2px; */
-}
-
-.header-top {
-    justify-content: center;
+  }
+  
+  .header-top {
+    justify-content: end;
     align-items: center;
     background: #B50014;
     height: 93px;
     display: flex;
-}
-
-nav {
+  }
+  
+  nav {
     display: flex;
+    margin-right: 300px;
     gap: 15px;
-}
-
-nav a {
-    color: #FFFFFF;
+  }
+  
+  nav a {
+    
     text-decoration: none;
     font-size: 18px;
-}
-
-.header-bottom {
+  }
+  
+  .header-bottom {
+    display: flex;
+    justify-content: end;
     background-color: #252525;
     height: 30px;
-    color: #FFFFFF;
-}
-
-.slider {
+    
+  }
+  
+  .header-bottom p {
+    display: flex;
+    justify-content: right;
+    margin-right: 300px;
+  }
+  
+  .slider {
     width: 100%;
     overflow: hidden;
     position: relative;
-}
-
-.slides {
+  }
+  
+  .slides {
     display: flex;
     width: 100%;
     animation: slide 9s infinite;
-}
-
-.slides img {
+  }
+  
+  .slides img {
     width: 100%;
     height: auto;
     object-fit: cover;
-}
-
-@keyframes slide {
-    0% { transform: translateX(0); }
-    33% { transform: translateX(-33.33%); }
-    66% { transform: translateX(-66.66%); }
-    100% { transform: translateX(0); }
-}
-
-.content-1 {
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    33% {
+      transform: translateX(-33.33%);
+    }
+    66% {
+      transform: translateX(-66.66%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .dry-aged {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 50px;
-    color: #FFFFFF;
-}
-
-.text-1 {
+    
+  }
+  
+  .dry-aged-text {
     width: 45%;
-}
-
-.image-1 {
-    width: 45%;
-}
-
-.image-1 img {
-    max-width: 100%;
-    height: auto;
-}
-
-.content-2 {
+    text-align: left;
+    max-width: 427px;
+    padding-top: 5%;
+  }
+  
+  .dry-aged-text span {
+    display: block;
+    padding-top: 2%;
+  }
+  
+  .dry-aged-text p {
+    padding-top: 15%;
+  }
+  
+  .dry-aged-button-group {
     display: flex;
     justify-content: space-between;
+    align-items: start;
+    flex-direction: row;
+    padding-top: 20%;
+  }
+  
+  .dry-aged-button-group button {
+    width: 174px;
+    height: 47px;
+    background-color: #B50014;
+    
+    border-radius: 40px;
+    border: 1px solid #FFFFFF;
+  }
+  .image-1 {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align */
+    width: fit-content; /* Shrink-wrap to content */
+    max-width: 537px;
+    max-height: 493px;
+    margin: 0 auto; /* Center the entire block */
+  }
+  
+  .main-image {
+    width: 100%; /* Ensure image takes full width of parent */
+    display: block; /* Removes extra space below inline images */
+  }
+  
+  .image-group {
+    display: flex;
+    justify-content: space-between; /* Even spacing */
+    width: 100%; /* Same width as main image */
+    gap: 10px; /* Adds space between images */
+  }
+  
+  .image-group img {
+    width: calc(100% / 3 - 10px); /* Ensure three images fit evenly */
+  }
+  
+  .content-2 {
+    display: flex;
+    justify-content: center;
+    margin-left: -300px;
+    margin-right: -300px;
+    width: calc(100% + 600px);
     align-items: center;
-    /* padding: 50px; */
-    color: #FFFFFF;
-}
-
-.content-2 button {
+    
+  }
+  
+  .content-2 button {
     color: #252525;
     background-color: #FFFFFF;
     height: 47px;
     width: 174px;
     border-radius: 40px;
     border: 1px solid #FF0000;
-}
-
-.text-2 {
+  }
+  
+  .text-2 {
     width: 45%;
-}
-
-.image-2 {
+  }
+  
+  .image-2 {
     width: 50%;
     height: 642px;
     max-height: 642px;
-}
-
-.image-2 img {
+  }
+  
+  .image-2 img {
     max-width: 100%;
     height: auto;
     max-height: 642px;
     object-fit: cover;
-}
-
-.content-left {
+  }
+  
+  .content-left {
     background-color: #B50014;
     max-width: 50%; /* Adjusted for more flexibility */
     height: 642px;
-}
-
-.content-3 {
+  }
+  
+  .das-handwerk {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
     padding: 50px;
-    color: #FFFFFF;
-}
-
-.divider {
+    width: 627px;
+    
+  }
+  
+  .pepper {
+    display: flex;
+    justify-content: center;
+    padding-top: 20%;
+    margin-left: -300px;
+    margin-right: -300px;
+    width: calc(100% + 600px);
+    align-items: center;
+    
+  }
+  
+  .image-row {
+    display: flex;
+    justify-content: space-evenly
+  }
+  
+  .awards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+  }
+  
+  .award {
+    display: flex;
+    flex-direction: column; /* Stacks image and text */
+    align-items: center; /* Centers content */
+    gap: 20px;
+    opacity: 51%;
+    max-width: 150px; /* Prevents text from spreading too wide */
+  }
+  
+  .genussnetz {
+    display: flex; /* Aligns children in a row */
+    justify-content: space-evenly;
+    align-items: center; /* Centers content vertically */
+    gap: 20px; /* Space between image and text */
+  }
+  
+  .genussnetz-text-content {
+    display: flex;
+    flex-direction: column; /* Stack text and button */
+    text-align: left;
+    
+    gap: 10px; /* Space between heading and button */
+  }
+  
+  
+  
+  .genussnetz-text-content button {
+    align-items: center;
+    border: 1px solid #FFFFFF;
+    width: 174px;
+    height: 47px;
+    border-radius: 40px;
+    background-color: #d11f1f; /* Example button color */
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .divider {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
-    color: #FFFFFF;
+    padding: 40px;
+    
     gap: 20px;
     width: 100%;
-}
-
-.line {
+  }
+  
+  .line {
     flex-grow: 1; /* Makes lines expand equally */
     height: 2px; /* Adjust thickness */
     background-color: #252525; /* Change to your color */
-}
-
-.divider-icon {
+  }
+  
+  .divider-icon {
     width: 50px; /* Adjust size */
     height: auto;
-}
-
-footer {
+  }
+  
+  footer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-}
-
-.footer-top {
+  }
+  
+  .footer-top {
     display: flex;
-    justify-content: space-evenly;
-    text-align: left;
+    justify-content: space-between;
     align-items: center;
     background: #B50014;
-    color: #FFFFFF;
+    
     height: 174px;
-}
-
-.footer-top p {
+  }
+  
+  .footer-top > div {
+    flex: 1; /* Ensures the left and right divs take equal space */
+  }
+  
+  .footer-logo {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+  }
+  
+  .social-networks {
+    text-align: right; /* Aligns text to the right */
+  }
+  
+  .social-networks div {
+    display: flex;
+    gap: 10px; /* Adds space between social icons */
+  }
+  
+  .social-networks img {
+    width: 24px; /* Adjust social icon size */
+    height: auto;
+  }
+  .footer-top p {
     padding: 10px;
-}
-
-.footer-bottom {
+  }
+  
+  .footer-bottom {
     display: flex; /* Use flexbox */
-    justify-content: space-evenly; /* Space between the two <p> tags */
     align-items: center; /* Align items vertically */
+    justify-content: space-between;
     background-color: #252525;
     height: 30px;
-    color: #FFFFFF;
     white-space: nowrap; /* Prevents text from wrapping */
-}
-.footer-bottom p {
-    margin: 0; /* Removes default margins */
-}
-
-.footer-logo {
+  }
+  
+  .footer-bottom p {
+    margin: 300px; /* Removes default margins */
+  }
+  
+  .footer-logo {
     width: 131.2px;
     height: 131.2px;
-}
-
-.footer-top svg {
+  }
+  
+  .footer-top svg {
     gap: 5px;
     fill: #FFFFFF;
-}
+  }
+  
+  /*# sourceMappingURL=styles.css.map */
+  
