@@ -10,22 +10,30 @@
 
 <body>
     <header>
-
         <div class="header-top">
-            <nav>
-                <a href="#">Die Metzgerei</a>
-                <a href="#">Dry Aged</a>
-                <a href="#">Fleischversand</a>
-                <a href="#">Events/Kurse</a>
-                <a href="#">Partyservice</a>
-                <a href="#">Tagesessen</a>
-                <a href="#">Impressum</a>
-                <a href="#">Kontakt</a>
-                <a href="#"><img src="assets/icons/pdf.svg" alt="Download">download</a>
-            </nav>
+            <div class="header-content">
+                <nav>
+                    <a href="#">
+                        <img src="assets/icons/logo.svg" alt="Logo" class="logo"> <!-- Logo here -->
+                    </a>
+                    <a href="#">Die Metzgerei</a>
+                    <a href="#">Dry Aged</a>
+                    <a href="#">Fleischversand</a>
+                    <a href="#">Events/Kurse</a>
+                    <a href="#">Partyservice</a>
+                    <a href="#">Tagesessen</a>
+                    <a href="#">Impressum</a>
+                    <a href="#">Kontakt</a>
+                    <a href="#"><img src="assets/icons/pdf.svg" alt="Download">download</a>
+                </nav>
+            </div>
+            
         </div>
         <div class="header-bottom">
-            <p>Opentime: Di. - Fr.: 07:00-13:00 und 15:00-18:30. Sa.: 07:30 - 12:30</p>
+            <div class="header-content">
+                <img src="assets/icons/clock.svg" alt="">
+                <p>Opentime: Di. - Fr.: 07:00-13:00 und 15:00-18:30. Sa.: 07:30 - 12:30</p>
+            </div>
         </div>
     </header>
 
@@ -88,7 +96,7 @@
         </section>
         <section class="das-handwerk">
             <div class="text-1">
-                <h2>Das Handwerk</h2>
+                <h2>Das Handwerk<br><br></h2>
                 <h2>alles über unsere Hausgemachte Produkte</h2>
                 <p>Halt amet, consectetur Handtasche elit, sed do eiusmod tempor Stuttgart ut labore et dolore magna 99
                     Luftballons Ut enim ad minim veniam, Turnbeutel nostrud exercitation ullamco laboris nisi Sprechen
@@ -99,7 +107,7 @@
                     an,
                     his ei Reise euismod assentior</p>
                 <button>
-                    Grillkurs
+                    Das Handwerk
                 </button>
             </div>
         </section>
@@ -132,15 +140,19 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="content-3">
+        <section class="content-3">
+            <div class="content-3-container">
+                <h2>Fleischversand</h2>
+                <button class="content-3-button">Jetzt bestellen</button>
+            </div>
             <img src="assets/images/dry-aged.png" alt="">
-        </section> -->
+        </section>
         <section class="genussnetz">
             <div class="genussnetz-logo">
                 <img src="assets/images/genussnetz logo 1.png" alt="Genussnetz Logo">
             </div>
             <div class="genussnetz-text-content">
-                <h2>Metzgerei Brath ist Mitglied<br><br> im Genussnetzwerk</h2>
+                <h2>Metzgerei Brath ist Mitglied <br><br> im Genussnetzwerk</h2>
                 <button>Gehen zu site</button>
             </div>
         </section>
@@ -150,35 +162,27 @@
             <div class="line"></div>
         </section>
         <section class="awards">
-
-            <!-- <div class="text-1"> -->
             <h2>Auszeichnungen</h2>
-            <!-- </div> -->
-            <!-- <div class="image-1"> -->
-            <div class="award">
-                <img src="assets/icons/nagrada1.svg" alt="Dry-aged meat left">
-                <p>Tollit argumentum genau <br><br>
-                    Saepe lobortis</p>
+            <div class="awards-container">
+                <div class="award">
+                    <img src="assets/icons/nagrada1.svg" alt="Dry-aged meat left">
+                    <p>Tollit argumentum genau <br><br> Saepe lobortis</p>
+                </div>
+                <div class="award">
+                    <img src="assets/icons/nagrada2.svg" alt="Dry-aged meat left">
+                    <p>Schneewittchen <br><br> denique</p>
+                </div>
+                <div class="award">
+                    <img src="assets/icons/nagrada3.svg" alt="Dry-aged meat left">
+                    <p>Grimms Märchen<br><br> expetenda</p>
+                </div>
+                <div class="award">
+                    <img src="assets/icons/nagrada4.svg" alt="Dry-aged meat left">
+                    <p>Mettwurst mei<br><br> ullum gloriatur.</p>
+                </div>
             </div>
-
-            <div class="award">
-                <img src="assets/icons/nagrada2.svg" alt="Dry-aged meat left">
-                <p>Schneewittchen <br><br>
-                    denique</p>
-            </div>
-            <div class="award">
-                <img src="assets/icons/nagrada3.svg" alt="Dry-aged meat left">
-                <p>Grimms Märchen<br><br>
-                    expetenda</p>
-            </div>
-            <div class="award">
-                <img src="assets/icons/nagrada4.svg" alt="Dry-aged meat left">
-                <p>Mettwurst mei<br><br>
-                    ullum gloriatur.</p>
-            </div>
-            
-            <!-- </div> -->
         </section>
+        
         <section class="divider">
             <div class="line"></div>
             <img src="assets/icons/divider-logo.svg" alt="Icon" class="divider-icon">
@@ -191,54 +195,82 @@
 
             </div>
         </section>
+
+        <section class="testimonial-slider">
+            <div class="testimonial-slide active">
+                <div class="testimonial-content">
+                    <img src="assets/icons/icon1.svg" alt="Icon">
+                    <div class="stars">
+                        ★ ★ ★
+                    </div>
+                    <p>Wiener Schnitzel amet, consectetur Handtasche elit, sed do eiusmod tempor Stuttgart ut labore et dolore magna. Luftballons Ut Turnbeutel nostrud exercitation ullamco.</p>
+                    <h4>Halling Tobias</h4>
+                    <span>Koch</span>
+                    <div class="quote">„</div>
+                </div>
+            </div>
+        
+            <div class="testimonial-slide">
+                <div class="testimonial-content">
+                    <p>Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener Schnitzel aute irure dolor in Guten Tag mollit am Stuttgart.</p>
+                    <h4>Maria Karstofen</h4>
+                </div>
+            </div>
+        
+            <div class="testimonial-slide">
+                <div class="testimonial-content">
+                    <p>Achtung fur aliam induction campacthauch HugoClub Mate mea meliore denique nominavi id. Reise euismod assentior.</p>
+                    <h4>Rene Wernstein</h4>
+                </div>
+            </div>
+        
+            <button class="prev">
+                <img src="assets/icons/prev-arrow.svg" alt="Previous">
+            </button>
+            <button class="next">
+                <img src="assets/icons/next-arrow.svg" alt="Next">
+            </button>
+        </section>
+        
+        <button class="all-reports">Alle Berichte</button>
     </main>
 
     <footer>
         <div class="footer-top">
-            <div>
-                <p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-geo-alt" viewBox="0 0 16 16">
-                        <path
-                            d="M3.654 6.478a4.5 4.5 0 1 1 8.692 0c-.412 1.868-1.62 3.984-3.346 6.299a1.5 1.5 0 0 1-2.07.328 1.5 1.5 0 0 1-.328-.328c-1.725-2.315-2.934-4.43-3.346-6.299Z" />
-                        <path d="M8 15s6-5.686 6-9A6 6 0 0 0 2 6c0 3.314 6 9 6 9Z" />
-                        <path d="M8 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
-                    </svg>
-                    Klauprechtstraße 25, 76137 Karlsruhe, Germany
-                </p>
-                <p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-telephone" viewBox="0 0 16 16">
-                        <path
-                            d="M3.654 1.328a1 1 0 0 1 1.411-.111l2.498 2.084a1 1 0 0 1 .272 1.065l-.717 2.504a1 1 0 0 0 .272 1.028l2.012 2.011a1 1 0 0 0 1.028.272l2.504-.717a1 1 0 0 1 1.065.272l2.084 2.498a1 1 0 0 1-.111 1.411l-2.234 1.866a2 2 0 0 1-2.337.16c-1.506-.997-3.825-3.114-5.913-6.202-2.087-3.089-3.385-5.708-3.994-7.443a2 2 0 0 1 .16-2.337L3.654 1.328Z" />
-                    </svg>
-                    +49 721 358060
-                </p>
-                <p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-envelope" viewBox="0 0 16 16">
-                        <path
-                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-5.75 3.45a1 1 0 0 1-1 0L1 5.383V12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5.383Z" />
-                    </svg>
-                    info@partyservice-brath.de
-                </p>
-            </div>
-            <img src="assets/icons/logo.svg" alt="Footer Logo" class="footer-logo">
-            <nav class="social-networks" aria-label="Social Media">
-                <p>Besuchen Sie uns auf:</p>
-                <div>
-                    <a href="#" aria-label="Twitter"><img src="assets/icons/twitter.svg" alt="Twitter"></a>
-                    <a href="#" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
-                    <a href="#" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
-                    <a href="#" aria-label="YouTube"><img src="assets/icons/youtube.svg" alt="YouTube"></a>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>
+                        <!-- <svg>...</svg> -->
+                        Klauprechtstraße 25, 7ruhe, Germany
+                    </p>
+                    <p>
+                        <!-- <svg>...</svg> -->
+                        +49 721 358060
+                    </p>
+                    <p>
+                        <!-- <svg>...</svg> -->
+                        info@partyservice-brath.de
+                    </p>
                 </div>
-            </nav>
+                <img src="assets/icons/logo.svg" alt="Footer Logo" class="footer-logo">
+                <nav class="social-networks" aria-label="Social Media">
+                    <p>Besuchen Sie uns auf:</p>
+                    <div>
+                        <a href="#" aria-label="Twitter"><img src="assets/icons/twitter.svg" alt="Twitter"></a>
+                        <a href="#" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
+                        <a href="#" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
+                        <a href="#" aria-label="YouTube"><img src="assets/icons/youtube.svg" alt="YouTube"></a>
+                    </div>
+                </nav>
+            </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2020 by Metzgerei Heiko Brath GmbH, Deutschland</p>
-            <p>Code and design by <span>StudioPresent</span></p>
+            <div class="footer-content">
+                <p>© 2020 by Metzgerei Heiko Brath GmbH, Deutschland</p>
+                <p>Code and design by <span>StudioPresent</span></p>
+            </div>
         </div>
-    </footer>
+    </footer>    
 
     <script src="script.js"></script>
 </body>
