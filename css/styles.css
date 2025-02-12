@@ -100,7 +100,6 @@ nav a {
 .slides {
   display: flex;
   width: 100%;
-
 }
 
 .slides img {
@@ -110,21 +109,16 @@ nav a {
 }
 
 @keyframes slide {
-
-  0%,
-  100% {
+  0%, 100% {
     transform: translateX(0);
   }
-
   33% {
     transform: translateX(-33.33%);
   }
-
   66% {
     transform: translateX(-66.66%);
   }
 }
-
 /* Content Sections */
 .dry-aged {
   display: flex;
@@ -203,7 +197,6 @@ nav a {
   border-radius: 40px;
 }
 
-
 .pepper {
   display: flex;
   width: 100%;
@@ -266,7 +259,6 @@ nav a {
   object-fit: cover;
   /* Ensures the image covers the area without distortion */
 }
-
 
 .das-handwerk {
   display: flex;
@@ -385,7 +377,6 @@ nav a {
   text-align: center;
 }
 
-
 .testimonial-slider {
   display: flex;
   justify-content: center;
@@ -418,14 +409,13 @@ nav a {
   position: absolute;
   opacity: 0.5;
   transition: transform 0.5s, opacity 0.5s;
-
-  &.active {
-    width: 429px;
-    height: 414px;
-    transform: scale(1.2);
-    opacity: 1;
-    z-index: 2;
-  }
+}
+.testimonial-slide.active {
+  width: 429px;
+  height: 414px;
+  transform: scale(1.2);
+  opacity: 1;
+  z-index: 2;
 }
 
 .testimonial-slide:nth-child(2) {
@@ -496,8 +486,6 @@ nav a {
   border-radius: 20px;
   cursor: pointer;
 }
-
-
 
 footer {
   width: 100%;
@@ -572,7 +560,6 @@ footer {
   /* Prevents wrapping */
 }
 
-
 .footer-bottom .footer-content {
   justify-content: space-between;
 }
@@ -606,7 +593,6 @@ footer {
 .section-2-button:hover {
   background: #900010;
 }
-
 
 .image-1 {
   display: flex;
@@ -663,7 +649,6 @@ footer {
 /* Responsive Fix */
 /* Responsive Fix */
 @media (max-width: 768px) {
-
   /* Stack all main sections vertically */
   body,
   main,
@@ -685,7 +670,6 @@ footer {
     margin: 0;
     padding: 0;
   }
-
   /* Add space on the left and right */
   main,
   .header-top,
@@ -700,13 +684,11 @@ footer {
     padding-left: 20px;
     padding-right: 20px;
   }
-
   /* Header adjustments */
   header {
     display: block;
     position: relative;
   }
-
   .logo {
     position: absolute;
     left: 20px;
@@ -714,20 +696,17 @@ footer {
     top: 10px;
     /* Adjust the position */
   }
-
   .header-top {
     flex-direction: column;
     /* Stack elements vertically */
     height: auto;
     padding: 20px;
   }
-
   .header-content {
     display: block;
     text-align: center;
     padding: 10px;
   }
-
   /* Navigation inside a button */
   .nav-button {
     display: inline-block;
@@ -741,7 +720,6 @@ footer {
     right: 20px;
     top: 20px;
   }
-
   nav {
     display: none;
     /* Initially hide navigation */
@@ -755,18 +733,15 @@ footer {
     width: 200px;
     z-index: 10;
   }
-
   nav a {
     color: white;
     font-size: 18px;
     text-decoration: none;
   }
-
   /* Hamburger button toggle */
-  .nav-button.active+nav {
+  .nav-button.active + nav {
     display: flex;
   }
-
   /* Slider adjustments */
   .slider {
     width: 100%;
@@ -774,17 +749,14 @@ footer {
     position: relative;
     margin-top: 20px;
   }
-
   .slides {
     display: block;
   }
-
   .slides img {
     width: 100%;
     height: auto;
     object-fit: cover;
   }
-
   /* Content Section - Stack content vertically */
   .dry-aged,
   .pepper,
@@ -796,7 +768,6 @@ footer {
     display: block;
     width: 100%;
   }
-
   .dry-aged-text,
   .image-2,
   .content-left,
@@ -806,17 +777,14 @@ footer {
     text-align: center;
     padding: 20px;
   }
-
   .dry-aged-button-group {
     display: block;
     text-align: center;
   }
-
   .dry-aged-button-group button {
     width: 100%;
     margin-bottom: 10px;
   }
-
   .content-3-container {
     position: relative;
     padding: 20px;
@@ -824,53 +792,43 @@ footer {
     color: white;
     border-radius: 8px;
   }
-
   .content-3 h2 {
     font-size: 24px;
   }
-
   .content-3-button {
     font-size: 16px;
   }
-
   /* Social icons, footer links stacked */
   .footer-content,
   .social-networks {
     display: block;
     text-align: center;
   }
-
   .social-networks {
     gap: 20px;
     margin: 0 auto;
   }
-
   .footer-logo {
     max-width: 120px;
     margin: 0 auto;
   }
-
   .footer-content div {
     width: 100%;
     text-align: center;
   }
-
   /* Divider adjustments */
   .divider {
     flex-direction: column;
   }
-
   .line {
     width: 100%;
     height: 2px;
     background-color: #252525;
   }
-
   .divider-icon {
     margin-top: 10px;
   }
 }
-
 /* Responsive Fix for .testimonial-slider */
 @media (max-width: 768px) {
   .testimonial-slider {
@@ -888,13 +846,11 @@ footer {
     /* Ensure there's enough space at the bottom */
     z-index: 1;
   }
-
   /* Only show the active slide */
   .testimonial-slide {
     display: none;
     /* Hide all slides by default */
   }
-
   .testimonial-slide.active {
     display: block;
     /* Only show the active slide */
@@ -907,7 +863,6 @@ footer {
     transform: scale(1);
     /* Remove any scaling */
   }
-
   /* Reposition arrows below the slide */
   .prev,
   .next {
@@ -919,8 +874,6 @@ footer {
     /* Add space at the bottom */
   }
 }
-
-
 /* Responsive Fix for .image-row */
 @media (max-width: 768px) {
   .image-row {
@@ -934,7 +887,6 @@ footer {
     padding: 20px 0;
     /* Optional padding */
   }
-
   .image-row img {
     width: 100%;
     /* Ensure images stretch to full width */
@@ -944,7 +896,6 @@ footer {
     /* Space between images */
   }
 }
-
 /* Responsive Fix for .awards */
 @media (max-width: 768px) {
   .awards {
@@ -958,12 +909,10 @@ footer {
     gap: 20px;
     /* Space between each award */
   }
-
   .awards h2 {
     text-align: center;
     /* Center the title */
   }
-
   .awards-container {
     display: flex;
     flex-direction: column;
@@ -972,13 +921,11 @@ footer {
     /* Space between awards */
     align-items: center;
   }
-
   .award {
     width: 100%;
     text-align: center;
   }
 }
-
 /* Responsive Fix for .testimonial-slider */
 @media (max-width: 768px) {
   .testimonial-slider {
@@ -991,14 +938,12 @@ footer {
     align-items: center;
     padding-bottom: 40px;
   }
-
   .testimonial-slide {
     width: 100%;
     height: auto;
     transform: scale(1);
     opacity: 1;
   }
-
   /* Position arrows below the slide */
   .prev,
   .next {
@@ -1007,15 +952,15 @@ footer {
     margin-bottom: 20px;
   }
 }
-
 /* Mobile responsiveness for footer-top */
 @media (max-width: 768px) {
   .footer-top {
     flex-direction: column;
     text-align: center;
   }
-
   .social-networks {
     margin-top: 20px;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */
