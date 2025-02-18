@@ -4,38 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Website</title>
+    <title>Brath</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <header>
         <div class="header-top">
-            <div class="header-content">
-                <nav>
-                    <a href="#">
-                        <img src="assets/icons/logo.svg" alt="Logo" class="logo"> <!-- Logo here -->
-                    </a>
-                    <a href="#">Die Metzgerei</a>
-                    <a href="#">Dry Aged</a>
-                    <a href="#">Fleischversand</a>
-                    <a href="#">Events/Kurse</a>
-                    <a href="#">Partyservice</a>
-                    <a href="#">Tagesessen</a>
-                    <a href="#">Impressum</a>
-                    <a href="#">Kontakt</a>
-                    <a href="#"><img src="assets/icons/pdf.svg" alt="Download">download</a>
-                </nav>
-            </div>
-
+          <div class="header-content">
+            <a href="#">
+              <img src="assets/icons/logo.svg" alt="Logo" class="logo" />
+            </a>
+            <a href="#" class="download-mobile">
+              <img src="assets/icons/pdf.svg" alt="Download" />
+              download
+            </a>
+            <!-- Hamburger Button -->
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+    
+            <!-- Navigation Menu -->
+            <nav id="nav-menu" class="nav-menu">
+              <a href="#">Die Metzgerei</a>
+              <a href="#">Dry Aged</a>
+              <a href="#">Fleischversand</a>
+              <a href="#">Events/Kurse</a>
+              <a href="#">Partyservice</a>
+              <a href="#">Tagesessen</a>
+              <a href="#">Impressum</a>
+              <a href="#">Kontakt</a>
+              <a href="#" class="download-desktop">
+                <img src="assets/icons/pdf.svg" alt="Download" />
+                download
+              </a>
+            </nav>
+          </div>
         </div>
+    
         <div class="header-bottom">
-            <div class="header-content">
-                <img src="assets/icons/clock.svg" alt="">
-                <p>Opentime: Di. - Fr.: 07:00-13:00 und 15:00-18:30. Sa.: 07:30 - 12:30</p>
-            </div>
+          <div class="header-content">
+            <img src="assets/icons/clock.svg" alt="Clock" />
+            <p>
+              Opentime: Di. - Fr.: 07:00-13:00 und 15:00-18:30. Sa.: 07:30 - 12:30
+            </p>
+          </div>
         </div>
-    </header>
+      </header>
 
     <div class="slider">
         <div class="slides">
@@ -164,8 +177,9 @@
             <div class="line"></div>
         </section>
         <section class="awards">
-            <h2>Auszeichnungen</h2>
+            
             <div class="awards-container">
+                <h2>Auszeichnungen</h2>
                 <div class="award">
                     <img src="assets/icons/nagrada1.svg" alt="Dry-aged meat left">
                     <p>Tollit argumentum genau <br><br> Saepe lobortis</p>
@@ -202,7 +216,7 @@
                 <div class="testimonial-content">
                     <img src="assets/icons/grillkurs_icon.svg" alt="Icon">
                     <div class="stars">
-                        ★ ★ ★
+                        <img src="assets/icons/stars.svg" alt="Stars">
                     </div>
                     <p>Wiener Schnitzel amet, consectetur Handtasche elit, sed do eiusmod tempor Stuttgart ut labore et
                         dolore magna. Luftballons Ut Turnbeutel nostrud exercitation ullamco.</p>

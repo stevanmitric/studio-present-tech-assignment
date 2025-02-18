@@ -27,3 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
         updateSlides();
     });
 });
+
+function toggleMenu() {
+    const navMenu = document.getElementById('nav-menu');
+    navMenu.classList.toggle('open');
+  }
